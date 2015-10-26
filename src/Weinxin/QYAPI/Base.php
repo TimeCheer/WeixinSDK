@@ -7,19 +7,20 @@ class Weixin_QYAPI_Base {
     
     const API_PREFIX = 'https://qyapi.weixin.qq.com/cgi-bin';
 
-    protected $corpId;
-    protected $corpSecret;
+    protected $accessToken;
     
-    protected $errorCode;
-    protected $errorMsg;
+    protected $errorCode = null;
+    protected $errorMsg = '';
 
     /**
      * 构造函数、配置企业号相关参数
      * @param string $corpId 企业号corp_id
      * @param string $corpSecret 企业号corp_secrect
      */
-    public function __construct($corpId, $corpSecret) {
-        $this->init($corpId, $corpSecret);
+    public function __construct($accessToken = '') {
+        if ($accessToken) {
+            $this->init($accessToken);
+        }
     }
 
     /**
@@ -28,17 +29,8 @@ class Weixin_QYAPI_Base {
      * @param string $corpId      企业号corp_id
      * @param string $corpSecret  企业号corp_secrect
      */
-    public function init($corpId, $corpSecret) {
-        $this->corpId = $corpId;
-        $this->corpSecret = $corpSecret;
-    }
-
-    public function getCorpId() {
-        return $this->corpId;
-    }
-
-    public function getCorpSecret() {
-        return $this->corpSecret;
+    public function init($accessToken) {
+        $this->accessToken = $accessToken;
     }
 
     /**
@@ -47,7 +39,7 @@ class Weixin_QYAPI_Base {
      * @param string $code 错误代码
      * @param string $msg 错误详细信息
      */
-    public function setError($code, $msg = null) {
+    public function setError($code, $msg = '') {
         $this->errorCode = $code;
         $this->errorMsg = $msg;
     }
@@ -76,7 +68,17 @@ class Weixin_QYAPI_Base {
      * @param array $params
      */
     public function request($api, array $params = array()) {
-        $apiUrl = rtrim(self::WEIXIN_BASE_API . '/' . $module . '/' . $node, '/');
+        $res = Weixin_HTTPClient::get($api, array_merge(
+            $params,
+            array('access_token' => $this->accessToken)
+        ));
+        
+        if (false === $res) {
+            $this->setError(-10, '获取数据失败!');
+            return false;
+        }
+
+        return $res;
     }
 
 }
