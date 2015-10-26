@@ -1,11 +1,11 @@
 <?php
 
 /**
- * 
+ * PC Web上 用户使用微信企业号登录
  */
-class Weixin_QYAPI_OAuth2 extends Weixin_QYAPI_Base {
+class Weixin_QY_OAuth2 {
     
-    const OAUTH2_URL = 'https://qy.weixin.qq.com/cgi-bin/loginpage';
+    const URL = 'https://qy.weixin.qq.com/cgi-bin/loginpage';
     
     /**
      * 创建OAuth协议的链接
@@ -28,7 +28,7 @@ class Weixin_QYAPI_OAuth2 extends Weixin_QYAPI_Base {
             'state' => $state
         );
         
-        $url = self::OAUTH2_URL . '?' . http_build_query($params);
+        $url = self::URL . '?' . http_build_query($params);
 
         return $url;
     }
