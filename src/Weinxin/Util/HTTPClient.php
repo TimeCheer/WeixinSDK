@@ -1,6 +1,6 @@
 <?php
 
-class Weinxin_HTTPClient {
+class Weixin_HTTPClient {
     
     
     /**
