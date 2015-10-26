@@ -46,4 +46,3 @@ class Weixin_QYAPI_Crypt_PKCS7Encoder {
     }
 
 }
-
