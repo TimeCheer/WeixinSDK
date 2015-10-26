@@ -92,15 +92,10 @@ class Weixin_QYAPI_AccessToekn {
     public function get($corpId = '', $corpSecret = '') {
         $this->init($corpId, $corpSecret);
 
-        $res = Weixin_HTTPClient::get(self::API_GET_TOKEN, array(
+        $res = $this->request(self::API_GET_TOKEN, array(
             'corpid' => $this->corpId,
             'corpsecret' => $this->corpSecrect,
         ));
-        
-        if (false === $res) {
-            $this->setError(-10, '获取AccessToken失败!');
-            return false;
-        }
 
         if(empty($res['access_token'])) {
             $this->setError(-11, '无效AccessToken!');
@@ -108,5 +103,16 @@ class Weixin_QYAPI_AccessToekn {
         }
 
         return $res['access_token'];
+    }
+    
+    public function request($api, $params = array()) {
+        $res = Weixin_HTTPClient::get($api, $params);
+        
+        if (false === $res) {
+            $this->setError(-10, '接口请求失败!');
+            return false;
+        }
+        
+        return $res;
     }
 }
