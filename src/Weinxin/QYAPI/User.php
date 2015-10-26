@@ -13,6 +13,8 @@ class Weixin_QYAPI_User extends Weixin_QYAPI_Base {
     const API_LIST = '/user/list';
     const API_LIST_SIMPLE = '/user/simplelist';
     const API_SEND_INVITE = '/invite/send';
+    const API_GET_OPENID = '/user/convert_to_openid';
+    const API_GET_USERID = '/user/convert_to_userid';
 
     /**
      * 添加用户 参数有点多,其实应该用结构来传 正常环境前八项是必填的
@@ -259,6 +261,14 @@ class Weixin_QYAPI_User extends Weixin_QYAPI_Base {
             'fetch_child' => $fetchChild,
             'status' => $status,
         ));
+    }
+    
+    public function getOpenid($uid, $agentId = null) {
+        return $this->doGet(self::API_GET_OPENID, array('userid' => $uid, 'agentid' => $agentId));
+    }
+    
+    public function getUserid($openid) {
+        return $this->doGet(self::API_GET_USERID, array('openid' => $openid));
     }
 
 }
