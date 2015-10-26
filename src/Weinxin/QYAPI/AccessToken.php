@@ -19,7 +19,7 @@ class Weixin_QYAPI_AccessToekn {
      * @param string $corpId 企业号corp_id
      * @param string $corpSecret 企业号corp_secrect
      */
-    public function __construct($corpId, $corpSecret) {
+    public function __construct($corpId = '', $corpSecret = '') {
         $this->init($corpId, $corpSecret);
     }
     
