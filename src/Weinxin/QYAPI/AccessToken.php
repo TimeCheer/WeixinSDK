@@ -2,6 +2,9 @@
 
 /**
  * AccessToken是企业号的全局唯一票据，调用接口时需携带AccessToken。
+ * @usage 
+ * $api = new Weixin_QYAPI_AccessToekn();
+ * $token = $api->get($corpId, $corpSecret);
  * 
  */
 class Weixin_QYAPI_AccessToekn {

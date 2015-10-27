@@ -4,12 +4,7 @@ class Weixin_HTTPClient {
     
     
     /**
-     * 设置post操作的get参数.
-     *
-     * @author Cui
-     *
-     * @date   2015-08-03
-     *
+     * 设置post操作的get参数
      * @param string $name  参数名
      * @param string $value 值
      */
@@ -192,11 +187,7 @@ class Weixin_HTTPClient {
     }
 
     /**
-     * 解析头部信息.
-     *
-     * @author 互联网
-     *
-     * @date   2015-08-03
+     * 解析头部信息
      *
      * @param array $raw_headers http header
      *
