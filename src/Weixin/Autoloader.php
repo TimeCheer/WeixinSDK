@@ -1,28 +1,56 @@
 <?php
 
-class Weinxin_Autoloader {
+/**
+ * 类自动加载
+ * @package weixin
+ */
+class Weixin_Autoloader {
+
+    private $_dir;
+    
+    const PREFIX = 'Weixin_';
+
     /**
-     * 自动加载方法.
-     *
-     * @author Cui
-     *
-     * @date   2015-07-29
+     * 构造函数
+     * @param string $dir 手动指定起始目录
+     */
+    public function __construct($dir = null) {
+        if (is_null($dir)) {
+            $dir = dirname(dirname(__FILE__));
+        }
+        $this->_dir = $dir;
+    }
+
+    /**
+     * 向PHP注册SPL autoloader
+     * @param string $dir 指定加载目录
+     * @return void
+     */
+    public static function register($dir = null) {
+        ini_set('unserialize_callback_func', 'spl_autoload_call');
+        
+        spl_autoload_register(array(new self($dir), 'autoload'), FALSE, TRUE);
+    }
+
+    /**
+     * 系统自动注册
      *
      * @param string $class 类名
-     * @param array  $param 参数
+     *
+     * @return boolean 正常加载返回true
      */
-    public static function autoload($class) {
-        static $_map;
-        if (!isset($_map[$class])) {
-            $class = str_replace(__NAMESPACE__, '', $class);
-            $file = (__DIR__ . $class . '.class.php');
-            if (!file_exists($file)) {
-                return false;
-            }
-
-            include $file;
-
-            $_map[$class] = $file;
+    public function autoload($class) {
+        if (0 !== strpos($class, self::PREFIX)) {
+            return false;
         }
+
+        if (file_exists($file = $this->_dir . '/' . str_replace('_', '/', $class) . '.php')) {
+            require_once $file;
+            
+            return true;
+        }
+        
+        return false;
     }
+
 }
