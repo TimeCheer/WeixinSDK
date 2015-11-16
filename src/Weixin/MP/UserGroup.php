@@ -3,7 +3,7 @@
 /**
  * 对公众平台的分组进行查询、创建、修改、删除等操作，也可以使用接口在需要时移动用户到某个分组
  * @link http://mp.weixin.qq.com/wiki/5/0d8acdd6d4433c877fbea938a2f133cd.html
- * @package weixin.mp
+ * @package timecheer.weixin.mp
  */
 class Weixin_MP_UserGroup extends Weixin_MP_Base {
     
@@ -28,7 +28,7 @@ class Weixin_MP_UserGroup extends Weixin_MP_Base {
             ),
         );
         
-        return $this->doPost(self::API_CREATE, $data, array(), true);
+        return $this->doPost(self::API_CREATE, $data);
     }
     
     /**
@@ -45,7 +45,7 @@ class Weixin_MP_UserGroup extends Weixin_MP_Base {
      * @return int group id
      */
     public function getIdByOpenId($openId) {
-        return $this->doPost(self::API_GETID, array('openid' => $openId), array(), true);
+        return $this->doPost(self::API_GETID, array('openid' => $openId));
     }
     
     /**
@@ -57,7 +57,7 @@ class Weixin_MP_UserGroup extends Weixin_MP_Base {
     public function update($id, $name) {
         return $this->doPost(self::API_UPDATE, array(
             'group' => array('id' => $id, 'name' => $name)
-        ), array(), true);
+        ));
     }
     
     /**
@@ -70,7 +70,7 @@ class Weixin_MP_UserGroup extends Weixin_MP_Base {
         return $this->doPost(self::API_MOVE_USER, array(
             'openid' => $openId, 
             'to_groupid' => $toGroupId
-        ), array(), true);
+        ));
     }
     
     /**
@@ -83,7 +83,7 @@ class Weixin_MP_UserGroup extends Weixin_MP_Base {
         return $this->doPost(self::API_MOVE_USERS, array(
             'openid_list' => $openIds, 
             'to_groupid' => $toGroupId
-        ), array(), true);
+        ));
     }
     
     /**
@@ -94,6 +94,6 @@ class Weixin_MP_UserGroup extends Weixin_MP_Base {
     public function delete($id) {
         return $this->doPost(self::API_DELETE, array(
             'group' => array('id' => $id)
-        ), array(), true);
+        ));
     }
 }

@@ -2,7 +2,7 @@
 
 /**
  * 获取粉丝用户基础信息
- * @package weixin.mp
+ * @package timecheer.weixin.mp
  */
 class Weixin_MP_User extends Weixin_MP_Base {
     
@@ -63,6 +63,6 @@ class Weixin_MP_User extends Weixin_MP_Base {
         return $this->doPost(self::API_UPDATE_REMARK, array(
             'openid' => $openId, 
             'remark' => $remark
-        ), array(), true);
+        ));
     }
 }
