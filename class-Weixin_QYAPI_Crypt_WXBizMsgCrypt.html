@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Weixin_QYAPI_Crypt_WXBizMsgCrypt | WeixinSDK4PHP</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-timecheer.html">
+						timecheer<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-timecheer.weixin.html">
+						weixin<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-timecheer.weixin.mp.html">
+						mp					</a>
+
+						</li>
+				<li>
+					<a href="package-timecheer.weixin.qy.html">
+						qy					</a>
+
+						</li>
+				<li>
+					<a href="package-timecheer.weixin.qyapi.html">
+						qyapi<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-timecheer.weixin.qyapi.crypt.html">
+						crypt					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-timecheer.weixin.util.html">
+						util					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Weixin_QYAPI_Crypt_ErrorCode.html">Weixin_QYAPI_Crypt_ErrorCode</a></li>
+				<li><a href="class-Weixin_QYAPI_Crypt_PKCS7Encoder.html">Weixin_QYAPI_Crypt_PKCS7Encoder</a></li>
+				<li><a href="class-Weixin_QYAPI_Crypt_Prpcrypt.html">Weixin_QYAPI_Crypt_Prpcrypt</a></li>
+				<li><a href="class-Weixin_QYAPI_Crypt_SHA1.html">Weixin_QYAPI_Crypt_SHA1</a></li>
+				<li class="active"><a href="class-Weixin_QYAPI_Crypt_WXBizMsgCrypt.html">Weixin_QYAPI_Crypt_WXBizMsgCrypt</a></li>
+				<li><a href="class-Weixin_QYAPI_Crypt_XMLParse.html">Weixin_QYAPI_Crypt_XMLParse</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Weixin_QYAPI_Crypt_WXBizMsgCrypt</h1>
+
+
+	<div class="description">
+	<p>1.第三方回复加密消息给公众平台；
+2.第三方收到公众平台发送的消息，验证消息的安全性，并对消息进行解密。</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-timecheer.html">timecheer</a>\<a href="package-timecheer.weixin.html">weixin</a>\<a href="package-timecheer.weixin.qyapi.html">qyapi</a>\<a href="package-timecheer.weixin.qyapi.crypt.html">crypt</a><br>
+
+				<b>Copyright:</b>
+				Copyright (c) 1998-2014 Tencent Inc.<br>
+			<b>Located at</b> <a href="source-class-Weixin_QYAPI_Crypt_WXBizMsgCrypt.html#9-179" title="Go to source code">src/Weixin/QYAPI/Crypt/WXBizMsgCrypt.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Weixin_QYAPI_Crypt_WXBizMsgCrypt.html#20-30" title="Go to source code">__construct</a>( <span> <var>$token</var></span>, <span> <var>$encodingAesKey</var></span>, <span> <var>$Corpid</var></span> )</code>
+
+		<div class="description short">
+			<p>构造函数</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>构造函数</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$token</var></dt>
+					<dd>公众平台上，开发者设置的token</dd>
+					<dt><var>$encodingAesKey</var></dt>
+					<dd>公众平台上，开发者设置的EncodingAESKey</dd>
+					<dt><var>$Corpid</var></dt>
+					<dd>公众平台的Corpid</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="VerifyURL" id="_VerifyURL">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_VerifyURL">#</a>
+		<code><a href="source-class-Weixin_QYAPI_Crypt_WXBizMsgCrypt.html#33-69" title="Go to source code">VerifyURL</a>( <span>sMsgSignature: <var>$sMsgSignature</var></span>, <span>sTimeStamp: <var>$sTimeStamp</var></span>, <span>sNonce: <var>$sNonce</var></span>, <span>sEchoStr: <var>$sEchoStr</var></span>, <span>sReplyEchoStr: <var>&amp; $sReplyEchoStr</var></span> )</code>
+
+		<div class="description short">
+			<p>验证URL</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>验证URL</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sMsgSignature</var></dt>
+					<dd>签名串，对应URL参数的msg_signature</dd>
+					<dt><var>$sTimeStamp</var></dt>
+					<dd>时间戳，对应URL参数的timestamp</dd>
+					<dt><var>$sNonce</var></dt>
+					<dd>随机串，对应URL参数的nonce</dd>
+					<dt><var>$sEchoStr</var></dt>
+					<dd>随机串，对应URL参数的echostr</dd>
+					<dt><var>$sReplyEchoStr</var></dt>
+					<dd>解密之后的echostr，当return返回0时有效</dd>
+				</dl></div>
+
+
+
+				<h4></h4>
+				<div class="list">
+						�<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="EncryptMsg" id="_EncryptMsg">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_EncryptMsg">#</a>
+		<code><a href="source-class-Weixin_QYAPI_Crypt_WXBizMsgCrypt.html#71-115" title="Go to source code">EncryptMsg</a>( <span> <var>$sReplyMsg</var></span>, <span> <var>$sTimeStamp</var></span>, <span> <var>$sNonce</var></span>, <span>&amp;$encryptMsg <var>&amp; $sEncryptMsg</var></span> )</code>
+
+		<div class="description short">
+			<p>将公众平台回复用户的消息加密打包.</p>
+
+<ol>
+   <li>对要发送的消息进行AES-CBC加密</li>
+   <li>生成安全签名</li>
+   <li>将消息密文和安全签名打包成xml格式</li>
+</ol>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>将公众平台回复用户的消息加密打包.</p>
+
+<ol> <li>对要发送的消息进行AES-CBC加密</li> <li>生成安全签名</li> <li>将消息密文和安全签名打包成xml格式</li>
+</ol>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sReplyMsg</var></dt>
+					<dd>公众平台待回复用户的消息，xml格式的字符串</dd>
+					<dt><var>$sTimeStamp</var></dt>
+					<dd>时间戳，可以自己生成，也可以用URL参数的timestamp</dd>
+					<dt><var>$sNonce</var></dt>
+					<dd>随机串，可以自己生成，也可以用URL参数的nonce</dd>
+					<dt><var>$sEncryptMsg</var></dt>
+					<dd><p>加密后的可以直接回复用户的密文，包括msg_signature, timestamp, nonce, encrypt的xml格式的字符串,
+                     当return返回0时有效</p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>成功0，失败返回对应的错误码
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DecryptMsg" id="_DecryptMsg">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DecryptMsg">#</a>
+		<code><a href="source-class-Weixin_QYAPI_Crypt_WXBizMsgCrypt.html#117-177" title="Go to source code">DecryptMsg</a>( <span> <var>$sMsgSignature</var></span>, <span> <var>$sTimeStamp</var></span>, <span> <var>$sNonce</var></span>, <span> <var>$sPostData</var></span>, <span>&amp;$msg <var>&amp; $sMsg</var></span> )</code>
+
+		<div class="description short">
+			<p>检验消息的真实性，并且获取解密后的明文.</p>
+
+<ol>
+   <li>利用收到的密文生成安全签名，进行签名验证</li>
+   <li>若验证通过，则提取xml中的加密消息</li>
+   <li>对消息进行解密</li>
+</ol>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>检验消息的真实性，并且获取解密后的明文.</p>
+
+<ol> <li>利用收到的密文生成安全签名，进行签名验证</li> <li>若验证通过，则提取xml中的加密消息</li> <li>对消息进行解密</li>
+</ol>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sMsgSignature</var></dt>
+					<dd>签名串，对应URL参数的msg_signature</dd>
+					<dt><var>$sTimeStamp</var></dt>
+					<dd>时间戳 对应URL参数的timestamp</dd>
+					<dt><var>$sNonce</var></dt>
+					<dd>随机串，对应URL参数的nonce</dd>
+					<dt><var>$sPostData</var></dt>
+					<dd>密文，对应POST请求的数据</dd>
+					<dt><var>$sMsg</var></dt>
+					<dd>解密后的原文，当return返回0时有效</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>成功0，失败返回对应的错误码
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		WeixinSDK4PHP API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Weixin_MP_User | WeixinSDK4PHP</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-timecheer.html">
+						timecheer<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-timecheer.weixin.html">
+						weixin<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-timecheer.weixin.mp.html">
+						mp					</a>
+
+						</li>
+				<li>
+					<a href="package-timecheer.weixin.qy.html">
+						qy					</a>
+
+						</li>
+				<li>
+					<a href="package-timecheer.weixin.qyapi.html">
+						qyapi<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-timecheer.weixin.qyapi.crypt.html">
+						crypt					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-timecheer.weixin.util.html">
+						util					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Weixin_MP_AutoReply.html">Weixin_MP_AutoReply</a></li>
+				<li><a href="class-Weixin_MP_Base.html">Weixin_MP_Base</a></li>
+				<li><a href="class-Weixin_MP_Kefu.html">Weixin_MP_Kefu</a></li>
+				<li><a href="class-Weixin_MP_Mass.html">Weixin_MP_Mass</a></li>
+				<li><a href="class-Weixin_MP_Material.html">Weixin_MP_Material</a></li>
+				<li><a href="class-Weixin_MP_Message.html">Weixin_MP_Message</a></li>
+				<li><a href="class-Weixin_MP_TemplateMessage.html">Weixin_MP_TemplateMessage</a></li>
+				<li class="active"><a href="class-Weixin_MP_User.html">Weixin_MP_User</a></li>
+				<li><a href="class-Weixin_MP_UserGroup.html">Weixin_MP_UserGroup</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Weixin_MP_User</h1>
+
+
+	<div class="description">
+	<p>获取粉丝用户基础信息</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Weixin_Base.html"><span>Weixin_Base</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-Weixin_MP_Base.html"><span>Weixin_MP_Base</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Weixin_MP_User</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-timecheer.html">timecheer</a>\<a href="package-timecheer.weixin.html">weixin</a>\<a href="package-timecheer.weixin.mp.html">mp</a><br>
+
+			<b>Located at</b> <a href="source-class-Weixin_MP_User.html#3-68" title="Go to source code">src/Weixin/MP/User.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getAll" id="_getAll">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAll">#</a>
+		<code><a href="source-class-Weixin_MP_User.html#17-30" title="Go to source code">getAll</a>( <span>string <var>$nextOpenId</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>来获取帐号的关注者列表,一次拉取调用最多拉取10000个关注者的OpenID</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>来获取帐号的关注者列表,一次拉取调用最多拉取10000个关注者的OpenID</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$nextOpenId</var></dt>
+					<dd>上一次调用得到的OPENID，不填默认从头开始拉取</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://mp.weixin.qq.com/wiki/11/434109e8de46b3968639217bbcb16c2f.html">http://mp.weixin.qq.com/wiki/11/434109e8de46b3968639217bbcb16c2f.html</a><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInfo" id="_getInfo">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInfo">#</a>
+		<code><a href="source-class-Weixin_MP_User.html#32-40" title="Go to source code">getInfo</a>( <span>string <var>$openId</var></span> )</code>
+
+		<div class="description short">
+			<p>通过OpenID来获取用户基本信息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>通过OpenID来获取用户基本信息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$openId</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://mp.weixin.qq.com/wiki/17/c807ee0f10ce36226637cebf428a0f6d.html">http://mp.weixin.qq.com/wiki/17/c807ee0f10ce36226637cebf428a0f6d.html</a><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllInfo" id="_getAllInfo">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAllInfo">#</a>
+		<code><a href="source-class-Weixin_MP_User.html#42-54" title="Go to source code">getAllInfo</a>( <span>array <var>$openIds</var></span> )</code>
+
+		<div class="description short">
+			<p>通过多个OpenID批量获取用户基本信息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>通过多个OpenID批量获取用户基本信息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$openIds</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="http://mp.weixin.qq.com/wiki/17/c807ee0f10ce36226637cebf428a0f6d.html">http://mp.weixin.qq.com/wiki/17/c807ee0f10ce36226637cebf428a0f6d.html</a><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateRemark" id="_updateRemark">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateRemark">#</a>
+		<code><a href="source-class-Weixin_MP_User.html#56-67" title="Go to source code">updateRemark</a>( <span>string <var>$openId</var></span>, <span>string <var>$remark</var></span> )</code>
+
+		<div class="description short">
+			<p>设置备注名 该接口暂时开放给微信认证的服务号</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>设置备注名 该接口暂时开放给微信认证的服务号</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$openId</var></dt>
+					<dd></dd>
+					<dt><var>$remark</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Weixin_Base.html#methods">Weixin_Base</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Weixin_Base.html#___construct">__construct()</a>, 
+			<a href="class-Weixin_Base.html#_doGet">doGet()</a>, 
+			<a href="class-Weixin_Base.html#_doPost">doPost()</a>, 
+			<a href="class-Weixin_Base.html#_getErrorCode">getErrorCode()</a>, 
+			<a href="class-Weixin_Base.html#_getErrorMsg">getErrorMsg()</a>, 
+			<a href="class-Weixin_Base.html#_init">init()</a>, 
+			<a href="class-Weixin_Base.html#_setError">setError()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="API_LIST" id="API_LIST">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Weixin_MP_User.html#9" title="Go to source code"><b>API_LIST</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#API_LIST" class="anchor">#</a>
+				<code><span class="php-quote">'/user/get'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="API_INFO" id="API_INFO">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Weixin_MP_User.html#11" title="Go to source code"><b>API_INFO</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#API_INFO" class="anchor">#</a>
+				<code><span class="php-quote">'/user/info'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="API_INFOS" id="API_INFOS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Weixin_MP_User.html#13" title="Go to source code"><b>API_INFOS</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#API_INFOS" class="anchor">#</a>
+				<code><span class="php-quote">'/user/info/batchget'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="API_UPDATE_REMARK" id="API_UPDATE_REMARK">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Weixin_MP_User.html#15" title="Go to source code"><b>API_UPDATE_REMARK</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#API_UPDATE_REMARK" class="anchor">#</a>
+				<code><span class="php-quote">'/user/info/updateremark'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Weixin_MP_Base.html#properties">Weixin_MP_Base</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Weixin_MP_Base.html#$apiPrefix"><var>$apiPrefix</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Weixin_Base.html#properties">Weixin_Base</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Weixin_Base.html#$accessToken"><var>$accessToken</var></a>, 
+			<a href="class-Weixin_Base.html#$errorCode"><var>$errorCode</var></a>, 
+			<a href="class-Weixin_Base.html#$errorMsg"><var>$errorMsg</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		WeixinSDK4PHP API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

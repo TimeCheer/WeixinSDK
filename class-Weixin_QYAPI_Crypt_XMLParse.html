@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Weixin_QYAPI_Crypt_XMLParse | WeixinSDK4PHP</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+				<li>
+					<a href="package-timecheer.html">
+						timecheer<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-timecheer.weixin.html">
+						weixin<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-timecheer.weixin.mp.html">
+						mp					</a>
+
+						</li>
+				<li>
+					<a href="package-timecheer.weixin.qy.html">
+						qy					</a>
+
+						</li>
+				<li>
+					<a href="package-timecheer.weixin.qyapi.html">
+						qyapi<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-timecheer.weixin.qyapi.crypt.html">
+						crypt					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="package-timecheer.weixin.util.html">
+						util					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Weixin_QYAPI_Crypt_ErrorCode.html">Weixin_QYAPI_Crypt_ErrorCode</a></li>
+				<li><a href="class-Weixin_QYAPI_Crypt_PKCS7Encoder.html">Weixin_QYAPI_Crypt_PKCS7Encoder</a></li>
+				<li><a href="class-Weixin_QYAPI_Crypt_Prpcrypt.html">Weixin_QYAPI_Crypt_Prpcrypt</a></li>
+				<li><a href="class-Weixin_QYAPI_Crypt_SHA1.html">Weixin_QYAPI_Crypt_SHA1</a></li>
+				<li><a href="class-Weixin_QYAPI_Crypt_WXBizMsgCrypt.html">Weixin_QYAPI_Crypt_WXBizMsgCrypt</a></li>
+				<li class="active"><a href="class-Weixin_QYAPI_Crypt_XMLParse.html">Weixin_QYAPI_Crypt_XMLParse</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Package</span>			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Weixin_QYAPI_Crypt_XMLParse</h1>
+
+
+	<div class="description">
+	<p>XMLParse class</p>
+
+<p>提供提取消息格式中的密文及生成回复消息格式的接口.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-timecheer.html">timecheer</a>\<a href="package-timecheer.weixin.html">weixin</a>\<a href="package-timecheer.weixin.qyapi.html">qyapi</a>\<a href="package-timecheer.weixin.qyapi.crypt.html">crypt</a><br>
+
+			<b>Located at</b> <a href="source-class-Weixin_QYAPI_Crypt_XMLParse.html#3-48" title="Go to source code">src/Weixin/QYAPI/Crypt/XMLParse.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="extract" id="_extract">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_extract">#</a>
+		<code><a href="source-class-Weixin_QYAPI_Crypt_XMLParse.html#11-29" title="Go to source code">extract</a>( <span>string <var>$xmltext</var></span> )</code>
+
+		<div class="description short">
+			<p>提取出xml数据包中的加密消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>提取出xml数据包中的加密消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$xmltext</var></dt>
+					<dd>待提取的xml字符串</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>提取出的加密消息字符串
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="generate" id="_generate">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_generate">#</a>
+		<code><a href="source-class-Weixin_QYAPI_Crypt_XMLParse.html#31-46" title="Go to source code">generate</a>( <span>string <var>$encrypt</var></span>, <span>string <var>$signature</var></span>, <span>string <var>$timestamp</var></span>, <span>string <var>$nonce</var></span> )</code>
+
+		<div class="description short">
+			<p>生成xml消息</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>生成xml消息</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$encrypt</var></dt>
+					<dd>加密后的消息密文</dd>
+					<dt><var>$signature</var></dt>
+					<dd>安全签名</dd>
+					<dt><var>$timestamp</var></dt>
+					<dd>时间戳</dd>
+					<dt><var>$nonce</var></dt>
+					<dd>随机字符串</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		WeixinSDK4PHP API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
