@@ -15,6 +15,7 @@
  *    <li>-40010: base64解密失败</li>
  *    <li>-40011: 生成xml失败</li>
  * </ul>
+ * @package timecheer.weixin.qyapi.crypt
  */
 class Weixin_QYAPI_Crypt_ErrorCode {
 

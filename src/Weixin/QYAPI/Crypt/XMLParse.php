@@ -4,6 +4,7 @@
  * XMLParse class
  *
  * 提供提取消息格式中的密文及生成回复消息格式的接口.
+ * @package timecheer.weixin.qyapi.crypt
  */
 class Weixin_QYAPI_Crypt_XMLParse {
 

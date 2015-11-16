@@ -9,6 +9,7 @@
 /**
  * 1.第三方回复加密消息给公众平台；
  * 2.第三方收到公众平台发送的消息，验证消息的安全性，并对消息进行解密。
+ * @package timecheer.weixin.qyapi.crypt
  */
 class Weixin_QYAPI_Crypt_WXBizMsgCrypt {
 

@@ -4,6 +4,7 @@
  * SHA1 class
  *
  * 计算公众平台的消息签名接口.
+ * @package timecheer.weixin.qyapi.crypt
  */
 class Weixin_QYAPI_Crypt_SHA1
 {

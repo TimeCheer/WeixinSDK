@@ -4,6 +4,7 @@
  * PKCS7Encoder class
  *
  * 提供基于PKCS7算法的加解密接口.
+ * @package timecheer.weixin.qyapi.crypt
  */
 class Weixin_QYAPI_Crypt_PKCS7Encoder {
 
