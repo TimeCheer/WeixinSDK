@@ -2,6 +2,7 @@
 
 /**
  * 应用创建菜单
+ * @package timecheer.weixin.qyapi
  */
 class Weixin_QYAPI_Menu extends Weixin_QYAPI_Base {
     

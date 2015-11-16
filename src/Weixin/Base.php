@@ -2,6 +2,7 @@
 
 /**
  * 构造用于访问API的基类
+ * @package timecheer.weixin
  */
 class Weixin_Base {
         

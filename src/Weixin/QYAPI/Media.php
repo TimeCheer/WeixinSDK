@@ -2,6 +2,7 @@
 
 /**
  * 临时素材件相关接口 3天内有效
+ * @package timecheer.weixin.qyapi
  */
 class Weixin_QYAPI_Media extends Weixin_QYAPI_Base {
     

@@ -2,6 +2,7 @@
 
 /**
  * 应用管理相关接口
+ * @package timecheer.weixin.qyapi
  */
 class Weixin_QYAPI_Agent extends Weixin_QYAPI_Base {
     

@@ -2,6 +2,7 @@
 
 /**
  * PC Web上 用户使用微信企业号登录
+ * @package timecheer.weixin.qy
  */
 class Weixin_QY_OAuth2 {
     

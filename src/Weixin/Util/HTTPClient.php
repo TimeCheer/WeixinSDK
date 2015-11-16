@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @package timecheer.weixin.util
+ */
 class Weixin_HTTPClient {
     
     

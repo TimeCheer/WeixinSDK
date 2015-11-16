@@ -5,7 +5,7 @@
  * @usage 
  * $api = new Weixin_QYAPI_AccessToekn();
  * $token = $api->get($corpId, $corpSecret);
- * 
+ * @package timecheer.weixin.qyapi
  */
 class Weixin_QYAPI_AccessToekn {
     

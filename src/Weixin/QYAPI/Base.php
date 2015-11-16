@@ -2,7 +2,7 @@
 
 /**
  * API基类
- * @package weixin.mp
+ * @package timecheer.weixin.qyapi
  */
 class Weixin_QYAPI_Base extends Weixin_Base {
     

@@ -2,6 +2,7 @@
 
 /**
  * 永久素材件相关接口
+ * @package timecheer.weixin.qyapi
  */
 class Weixin_QYAPI_Material extends Weixin_QYAPI_Base {
     

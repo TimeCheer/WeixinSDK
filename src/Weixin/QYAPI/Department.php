@@ -2,6 +2,7 @@
 
 /**
  * 通讯录管理 - 部门
+ * @package timecheer.weixin.qyapi
  */
 class Weixin_QYAPI_Department extends Weixin_QYAPI_Base {
     

@@ -2,7 +2,7 @@
 
 /**
  * 类自动加载
- * @package weixin
+ * @package timecheer.weixin
  */
 class Weixin_Autoloader {
 

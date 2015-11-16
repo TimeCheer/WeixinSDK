@@ -2,6 +2,7 @@
 
 /**
  * 通讯录管理 - 用户
+ * @package timecheer.weixin.qyapi
  */
 class Weixin_QYAPI_User extends Weixin_QYAPI_Base {
     

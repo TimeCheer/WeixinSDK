@@ -3,7 +3,7 @@
 /**
  * 微信 发送消息的相关接口.
  * 注意本类采用链式操作 ->setToUser()->setNews()->send();
- * 
+ * @package timecheer.weixin.qyapi
  */
 class Weixin_QYAPI_Message extends Weixin_QYAPI_Base {
     
