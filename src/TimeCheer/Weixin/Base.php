@@ -61,7 +61,7 @@ class Base {
      * @param strin $api
      * @param array $data post的数据
      * @param array $params url中构造的参数
-     * @param string $dataJsonEncoded post发出数据的格式是否需要json编码 默认为false表示常规,true json
+     * @param bool $dataJsonEncoded post发出数据的格式是否需要json编码 默认为false表示常规,true json
      * @return string
      */
     public function doPost($api, array $data = array(), array $params = array(), $dataJsonEncoded = false) {
