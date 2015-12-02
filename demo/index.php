@@ -1,5 +1,5 @@
 <?php
 
-require dirname(__FILE__) . '/../src/Autoloader.php';
+require dirname(__FILE__) . '/../src/TimeCheer/Weixin/Autoloader.php';
 
-Weixin_Autoloader::register();
+\TimeCheer\Weixin\Autoloader::register();
