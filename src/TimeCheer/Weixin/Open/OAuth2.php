@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\Open;
+namespace TimeCheer\Weixin\Open;
 
 /**
  * 用户在Web页面上OAuth2授权

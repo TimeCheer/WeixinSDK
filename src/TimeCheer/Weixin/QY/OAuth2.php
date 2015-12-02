@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\QY;
+namespace TimeCheer\Weixin\QY;
 
 /**
  * PC Web上 用户使用微信企业号登录

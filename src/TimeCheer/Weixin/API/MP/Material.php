@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\API\MP;
+namespace TimeCheer\Weixin\API\MP;
 
 /**
  * 永久素材相关接口

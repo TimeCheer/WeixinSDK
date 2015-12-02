@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\QYAPI\Crypt;
+namespace TimeCheer\Weixin\QYAPI\Crypt;
 
 /**
  * SHA1 class

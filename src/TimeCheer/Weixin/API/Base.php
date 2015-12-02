@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\API;
+namespace TimeCheer\Weixin\API;
 
 /**
  * OAuth2 相关资源接口

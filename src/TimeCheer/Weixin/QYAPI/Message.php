@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\QYAPI;
+namespace TimeCheer\Weixin\QYAPI;
 
 /**
  * 微信 发送消息的相关接口.

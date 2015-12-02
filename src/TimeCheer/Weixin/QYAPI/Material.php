@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\QYAPI;
+namespace TimeCheer\Weixin\QYAPI;
 
 /**
  * 永久素材件相关接口

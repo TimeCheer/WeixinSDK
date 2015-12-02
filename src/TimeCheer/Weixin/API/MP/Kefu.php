@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\API\MP;
+namespace TimeCheer\Weixin\API\MP;
 
 /**
  * 客服管理接口

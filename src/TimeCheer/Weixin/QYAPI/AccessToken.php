@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\QYAPI;
+namespace TimeCheer\Weixin\QYAPI;
 
 /**
  * AccessToken是企业号的全局唯一票据，调用接口时需携带AccessToken。

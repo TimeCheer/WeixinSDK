@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\API\MP;
+namespace TimeCheer\Weixin\API\MP;
 
 /**
  * 自动回复设置获取接口

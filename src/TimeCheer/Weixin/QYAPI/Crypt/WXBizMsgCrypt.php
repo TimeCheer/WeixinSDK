@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\QYAPI\Crypt;
+namespace TimeCheer\Weixin\QYAPI\Crypt;
 
 /**
  * 对公众平台发送给公众账号的消息加解密示例代码.

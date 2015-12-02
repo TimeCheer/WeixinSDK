@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\Open;
+namespace TimeCheer\Weixin\Open;
 
 /**
  * Open平台接口
