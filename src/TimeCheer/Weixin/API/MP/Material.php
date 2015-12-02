@@ -3,7 +3,7 @@
 namespace TimeCheer\Weixin\API\MP;
 
 /**
- * 永久素材相关接口
+ * 永久素材相关接口 包含临时素材操作
  * @package timecheer.weixin.api.mp
  */
 class Material extends Base {
