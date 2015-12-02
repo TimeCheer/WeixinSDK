@@ -2,7 +2,7 @@
 
 namespace TimeCheer\Weixin;
 
-use TimeCheer\Weixin\Util\HTTPClient;
+use \TimeCheer\Weixin\Util\HTTPClient;
 
 /**
  * 构造用于访问API的基类

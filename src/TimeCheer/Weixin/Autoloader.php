@@ -10,7 +10,7 @@ class Autoloader {
 
     private $_dir;
     
-    const PREFIX = '\\TimeCheer\TimeCheer\Weixin\\';
+    const PREFIX = '\\TimeCheer\Weixin\\';
 
     /**
      * 构造函数
