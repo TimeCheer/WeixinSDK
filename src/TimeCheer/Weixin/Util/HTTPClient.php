@@ -1,11 +1,11 @@
 <?php
 
-namespace TimeCheer\TimeCheer\Weixin\Util;
+namespace TimeCheer\Weixin\Util;
 
 /**
  * @package timecheer.weixin.util
  */
-class Weixin_HTTPClient {
+class HTTPClient {
     
     
     /**
