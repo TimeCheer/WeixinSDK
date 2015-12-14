@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class TimeCheer\Weixin\QYAPI\Crypt\PKCS7Encoder | WeixinSDK</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-TimeCheer.html">
+						TimeCheer<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-TimeCheer.Weixin.html">
+						Weixin<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.API.html">
+						API<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.API.MP.html">
+						MP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.API.SNS.html">
+						SNS					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.Open.html">
+						Open					</a>
+
+						</li>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.QY.html">
+						QY					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-TimeCheer.Weixin.QYAPI.html">
+						QYAPI<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-TimeCheer.Weixin.QYAPI.Crypt.html">
+						Crypt					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-TimeCheer.Weixin.QYAPI.Crypt.ErrorCode.html">ErrorCode</a></li>
+				<li class="active"><a href="class-TimeCheer.Weixin.QYAPI.Crypt.PKCS7Encoder.html">PKCS7Encoder</a></li>
+				<li><a href="class-TimeCheer.Weixin.QYAPI.Crypt.Prpcrypt.html">Prpcrypt</a></li>
+				<li><a href="class-TimeCheer.Weixin.QYAPI.Crypt.SHA1.html">SHA1</a></li>
+				<li><a href="class-TimeCheer.Weixin.QYAPI.Crypt.WXBizMsgCrypt.html">WXBizMsgCrypt</a></li>
+				<li><a href="class-TimeCheer.Weixin.QYAPI.Crypt.XMLParse.html">XMLParse</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-TimeCheer.Weixin.QYAPI.Crypt.html" title="Summary of TimeCheer\Weixin\QYAPI\Crypt"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PKCS7Encoder</h1>
+
+
+	<div class="description">
+	<p>PKCS7Encoder class</p>
+
+<p>提供基于PKCS7算法的加解密接口.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-TimeCheer.html">TimeCheer</a>\<a href="namespace-TimeCheer.Weixin.html">Weixin</a>\<a href="namespace-TimeCheer.Weixin.QYAPI.html">QYAPI</a>\<a href="namespace-TimeCheer.Weixin.QYAPI.Crypt.html">Crypt</a><br>
+		<b>Package:</b> timecheer\weixin\qyapi\crypt<br>
+
+			<b>Located at</b> <a href="source-class-TimeCheer.Weixin.QYAPI.Crypt.PKCS7Encoder.html#5-51" title="Go to source code">src/TimeCheer/Weixin/QYAPI/Crypt/PKCS7Encoder.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="encode" id="_encode">
+
+		<td class="attributes"><code>
+			 public 
+
+			补齐明文字符串
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_encode">#</a>
+		<code><a href="source-class-TimeCheer.Weixin.QYAPI.Crypt.PKCS7Encoder.html#15-35" title="Go to source code">encode</a>( <span> <var>$text</var></span> )</code>
+
+		<div class="description short">
+			<p>对需要加密的明文进行填充补位</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>对需要加密的明文进行填充补位</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd>需要进行填充补位操作的明文</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					补齐明文字符串
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="decode" id="_decode">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_decode">#</a>
+		<code><a href="source-class-TimeCheer.Weixin.QYAPI.Crypt.PKCS7Encoder.html#37-49" title="Go to source code">decode</a>( <span>decrypted <var>$text</var></span> )</code>
+
+		<div class="description short">
+			<p>对解密后的明文进行补位删除</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>对解密后的明文进行补位删除</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$text</var></dt>
+					<dd>解密后的明文</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="block_size" id="$block_size">
+		<td class="attributes"><code>
+			public static 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-TimeCheer.Weixin.QYAPI.Crypt.PKCS7Encoder.html#13" title="Go to source code"><var>$block_size</var></a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$block_size" class="anchor">#</a>
+				<code><span class="php-num">32</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		WeixinSDK API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

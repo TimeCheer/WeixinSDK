@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class TimeCheer\Weixin\Autoloader | WeixinSDK</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-TimeCheer.html">
+						TimeCheer<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-TimeCheer.Weixin.html">
+						Weixin<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.API.html">
+						API<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.API.MP.html">
+						MP					</a>
+
+						</li>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.API.SNS.html">
+						SNS					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.Open.html">
+						Open					</a>
+
+						</li>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.QY.html">
+						QY					</a>
+
+						</li>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.QYAPI.html">
+						QYAPI<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.QYAPI.Crypt.html">
+						Crypt					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-TimeCheer.Weixin.Util.html">
+						Util					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-TimeCheer.Weixin.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-TimeCheer.Weixin.Base.html">Base</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-TimeCheer.Weixin.html" title="Summary of TimeCheer\Weixin"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Autoloader</h1>
+
+
+	<div class="description">
+	<p>类自动加载</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-TimeCheer.html">TimeCheer</a>\<a href="namespace-TimeCheer.Weixin.html">Weixin</a><br>
+		<b>Package:</b> timecheer\weixin<br>
+
+			<b>Located at</b> <a href="source-class-TimeCheer.Weixin.Autoloader.html#5-58" title="Go to source code">src/TimeCheer/Weixin/Autoloader.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-TimeCheer.Weixin.Autoloader.html#15-24" title="Go to source code">__construct</a>( <span>string <var>$dir</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>构造函数</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>构造函数</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dir</var></dt>
+					<dd>手动指定起始目录</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="register" id="_register">
+
+		<td class="attributes"><code>
+			 public static
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_register">#</a>
+		<code><a href="source-class-TimeCheer.Weixin.Autoloader.html#26-35" title="Go to source code">register</a>( <span>string <var>$dir</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>向PHP注册SPL autoloader</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>向PHP注册SPL autoloader</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dir</var></dt>
+					<dd>指定加载目录</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="autoload" id="_autoload">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_autoload">#</a>
+		<code><a href="source-class-TimeCheer.Weixin.Autoloader.html#37-56" title="Go to source code">autoload</a>( <span>string <var>$class</var></span> )</code>
+
+		<div class="description short">
+			<p>系统自动注册</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>系统自动注册</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$class</var></dt>
+					<dd>类名</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>正常加载返回true
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="PREFIX" id="PREFIX">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-TimeCheer.Weixin.Autoloader.html#13" title="Go to source code"><b>PREFIX</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#PREFIX" class="anchor">#</a>
+				<code><span class="php-quote">'\\TimeCheer\Weixin\\'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		WeixinSDK API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
