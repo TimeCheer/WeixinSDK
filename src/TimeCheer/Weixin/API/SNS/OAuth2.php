@@ -1,10 +1,10 @@
 <?php
 
-namespace TimeCheer\Weixin\API;
+namespace TimeCheer\Weixin\API\SNS;
 
 /**
  * OAuth2相关接口
- * @package timecheer.weixin.api
+ * @package timecheer.weixin.api.sns
  */
 class OAuth2 extends Base {
     
