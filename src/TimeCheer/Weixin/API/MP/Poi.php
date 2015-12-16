@@ -26,16 +26,16 @@ class Poi extends Base {
      * 创建门店
      * @param string $information 门店的信息
      */
-    public function createOutlet($information) {
+    public function add($information) {
         return $this->doPost(self::API_ADD, $information, array(), true);
     }
 
     /**
      * 查询门店详细信息
-     * @param int $poi_id
+     * @param int $poiId 门店id
      */
-    public function outletDetails($poi_id) {
-        return $this->doPost(self::API_GET, array('poi_id' => $poi_id), array(), true);
+    public function get($poiId) {
+        return $this->doPost(self::API_GET, array('poi_id' => $poiId), array(), true);
     }
 
     /**
@@ -49,25 +49,25 @@ class Poi extends Base {
 
     /**
      * 修改门店服务信息
-     * @param int $poi_id 门店id
+     * @param int $poiId 门店id
      * @param array $details 门店修改信息
      */
-    public function outletUpdate($poi_id, $details) {
-        return $this->doPost(self::API_UPDATE, array('poi_id' => $poi_id, 'details' => $details));
+    public function update($poiId, $details) {
+        return $this->doPost(self::API_UPDATE, array('poi_id' => $poiId, 'details' => $details));
     }
 
     /**
      * 删除门店
-     * @param int $poi_id 门店id
+     * @param int $poiId 门店id
      */
-    public function outletDelete($poi_id) {
-        return $this->doPost(self::API_DELETE, array('poi_id' => $poi_id));
+    public function delete($poiId) {
+        return $this->doPost(self::API_DELETE, array('poi_id' => $poiId));
     }
 
     /**
      * 门店类目标
      */
-    public function outletCategory() {
+    public function category() {
         return $this->doGet(self::API_CATEGORY);
     }
 
