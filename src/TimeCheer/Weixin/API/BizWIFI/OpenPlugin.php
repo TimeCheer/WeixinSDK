@@ -22,7 +22,7 @@ class OpenPlugin extends Base {
      *      }
      *  }
      */
-    public function Token($callbackUrl) {
+    public function token($callbackUrl) {
         return $this->doPost(self::API_OPEN, array('callback_url' => $callbackUrl), array(), true);
     }
 

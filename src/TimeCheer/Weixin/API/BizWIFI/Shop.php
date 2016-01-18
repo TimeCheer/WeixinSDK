@@ -10,6 +10,7 @@ class Shop extends Base {
     
     const API_LIST = '/shop/list';
     const API_GET = '/shop/get';
+    const API_CLEAN = '/shop/clean';
     
     /**
      * 获取WiFi门店列表
@@ -42,7 +43,7 @@ class Shop extends Base {
      *  }
      */
     public function query($pageIndex = 1, $pageSize = 10) {
-        return $this->doPost(self::API_LIST, array('pageindex' => $pageIndex, 'pagesize' => $pageSize), array(), true);
+        return $this->doPost(self::API_LIST, array('pageindex' => (int) $pageIndex, 'pagesize' => (int) $pageSize), array(), true);
     }
     
     /**
@@ -62,7 +63,16 @@ class Shop extends Base {
      *      }
      *  }
      */
-    public function get($shopId) {
-        return $this->doPost(self::API_GET, array('shop_id' => $shopId), array(), true);
+    public function get($shopId) {        
+        return $this->doPost(self::API_GET, array('shop_id' => (int) $shopId), array(), true);
+    }
+    
+    /**
+     * 清空门店网络及设备
+     * @param int $shopId
+     * @return array{ "errcode": 0}
+     */
+    public function clean($shopId) {
+        return $this->doPost(self::API_CLEAN, array('shop_id' => (int) $shopId),array(), true);
     }
 }

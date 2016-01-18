@@ -19,6 +19,6 @@ class ConnectUrl extends Base {
      *  }
      */
     public function get() {
-        return $this->doPost(self::API_GET, array(), array(), true);
+        return $this->doPost(self::API_GET, array(), array(), true); 
     }
 }

@@ -42,11 +42,8 @@ class Statistics extends Base {
      *      ]
      *  }
      */
-    public function query($beginDate, $endDate, $shopId) {
-        $data = array('begin_date' => $beginDate, 'end_date' => $endDate);
-        if(!empty($shopId)) {
-            $data['shop_id'] = $shopId;
-        }
+    public function query($beginDate, $endDate, $shopId = -1) {
+        $data = array('begin_date' => $beginDate, 'end_date' => $endDate, 'shop_id' => $shopId);
         return $this->doPost(self::API_LIST, $data, array(), true);
     }
 }

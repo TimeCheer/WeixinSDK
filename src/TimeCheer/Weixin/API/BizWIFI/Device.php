@@ -22,7 +22,7 @@ class Device extends Base {
      * @return string $errcode = 0
      */
     public function add($shopId, $ssid, $password) {
-        return $this->doPost(self::API_ADD, array('shop_id' => $shopId, 'ssid' => $ssid, 'password' => $password), array(), true);
+        return $this->doPost(self::API_ADD, array('shop_id' => (int) $shopId, 'ssid' => $ssid, 'password' => $password), array(), true);
     }
 
     /**
@@ -53,8 +53,12 @@ class Device extends Base {
      *      }
      *  }
      */
-    public function query($pageIndex, $pageSize, $shopId) {
-        return $this->doPost(self::API_LIST, array('pageindex' => $pageIndex, 'pagesize' => $pageSize, 'shop_id' => $shopId), array(), true);
+    public function query($pageIndex = 1, $pageSize = 10, $shopId) {
+        $data = array('pageindex' => (int) $pageIndex, 'pagesize' => (int) $pageSize);
+        if (!empty($shopId)) {
+            $data['shop_id'] = (int) $shopId;
+        }
+        return $this->doPost(self::API_LIST, $data, array(), true);
     }
 
     /**

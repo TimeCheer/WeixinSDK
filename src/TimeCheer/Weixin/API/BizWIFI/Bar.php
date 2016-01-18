@@ -17,6 +17,6 @@ class Bar extends Base {
      * return bool
      */
     public function set($shopId, $barType = 0) {
-        return $this->doPost(self::API_SET, array('shop_id' => $shopId, 'bar_type' => $barType), array(), true);
+        return $this->doPost(self::API_SET, array('shop_id' => (int) $shopId, 'bar_type' => (int) $barType), array(), true);
     }
 }

@@ -22,7 +22,7 @@ class Qrcode extends Base {
      *  }
      */
     public function get($shopId, $imgId) {
-        return $this->doPost(self::API_GET, array('shop_id' => $shopId, 'img_id' => $imgId), array(), true);
+        return $this->doPost(self::API_GET, array('shop_id' => (int) $shopId, 'img_id' => (int) $imgId), array(), true);
     }
     
 }
