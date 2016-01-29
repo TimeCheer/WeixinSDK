@@ -7,6 +7,16 @@ namespace TimeCheer\Weixin\Util;
  */
 class HTTPClient {
     
+    /**
+     *
+     * @var string 错误代码
+     */
+    protected static $errorCode;
+    
+    /**
+     * @var string 错误信息
+     */
+    protected static $errorMsg;
     
     /**
      * 设置post操作的get参数
@@ -104,13 +114,16 @@ class HTTPClient {
 
         $res = trim(curl_exec($ch));
         $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $headersize = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
         curl_close($ch);
 
         $header = '';
         $body = $res;
         if ($httpcode == 200) {
-            list($header, $body) = explode("\r\n\r\n", $res, 2);
-            $header = self::parseHeaders($header);
+//            list($header, $body) = explode("\r\n\r\n", $res, 2);
+//            $header = self::parseHeaders($header);
+            $header = substr($res, 0, $headersize);
+            $body = substr($res, $headersize);
         }
 
         $result['info'] = $body;
@@ -129,7 +142,7 @@ class HTTPClient {
      */
     private static function packData($apiReturnData) {
         if ($apiReturnData['status'] != 200) {
-            self::setError('微信接口服务器连接失败.');
+            self::setError(-1, '微信接口服务器连接失败.');
 
             return false;
         }
@@ -230,6 +243,34 @@ class HTTPClient {
         }
 
         return $headers;
+    }
+    
+    /**
+     * 设置错误信息
+     *
+     * @param string $code 错误代码
+     * @param string $msg 错误详细信息
+     */
+    protected static function setError($code, $msg = '') {
+        self::$errorCode = $code;
+        self::$errorMsg = $msg;
+    }
+    
+    /**
+     * 获取错误代码
+     *
+     * @return string 错误代码
+     */
+    public static function getErrorCode() {
+        return self::$errorCode;
+    }
+
+    /**
+     * 获取错误信息
+     * @return string 错误信息
+     */
+    public static function getErrorMsg() {
+        return self::$errorMsg;
     }
 
 }

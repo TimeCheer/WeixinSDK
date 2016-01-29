@@ -49,7 +49,7 @@ class Base {
         ));
         
         if (false === $res) {
-            $this->setError(-10, '获取数据失败!');
+            $this->setError(-10, HTTPClient::getErrorMsg());
             return false;
         }
 
@@ -73,7 +73,7 @@ class Base {
         $res = HTTPClient::post($url, $data, $dataJsonEncoded);
         
         if (false === $res) {
-            $this->setError(-10, '获取数据失败!');
+            $this->setError(-10, HTTPClient::getErrorMsg());
             return false;
         }
 
